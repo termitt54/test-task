@@ -1,0 +1,22 @@
+@import '../../../../styles/variables.scss';
+
+.logo {
+    width: 100%;
+    max-width: 46.8rem;
+
+    display: flex;
+    align-items: center;
+
+    &__img {
+        width: 100%;
+        max-width: 14.8rem;
+        margin-right: 2rem;
+    }
+
+    &__title {
+        font-size: $medium;
+        color: $primary;
+        text-transform: uppercase;
+        font-family: $heuristica;
+    }
+}

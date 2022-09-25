@@ -1,0 +1,100 @@
+@import "../../../../../../styles/variables.scss";
+
+.pagination {
+  width: 100%;
+  max-width: 110rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  padding: 4rem 0;
+
+  &__prev,
+  &__next {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    max-width: 6rem;
+    height: 3.5rem;
+
+    border: 0.5px solid rgba($dark, 0.24);
+    border-radius: 2rem;
+  }
+
+  &__prev::before {
+    content: "";
+    position: absolute;
+    display: block;
+
+    top: 1.1rem;
+    left: 1.85rem;
+
+    border: 6px solid transparent;
+    border-right: 6px solid rgba($dark, 0.16);
+  }
+
+  &__prev_active {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+
+      top: 1.1rem;
+      left: 1.85rem;
+
+      border: 6px solid transparent;
+      border-right: 6px solid $primary;
+    }
+  }
+
+  &__next::before {
+    content: "";
+    position: absolute;
+    display: block;
+
+    top: 1.1rem;
+    left: 2.8rem;
+
+    border: 6px solid transparent;
+    border-left: 6px solid rgba($dark, 0.16);
+  }
+
+  &__next_active {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+
+      top: 1.1rem;
+      left: 2.8rem;
+
+      border: 6px solid transparent;
+      border-left: 6px solid $primary;
+    }
+  }
+
+  &__page {
+    cursor: pointer;
+    width: 100%;
+    max-width: 3.5rem;
+    height: 3.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: $medium;
+    color: $gray;
+    background-color: rgba($dark, 0.08);
+
+    border-radius: 50%;
+    padding: 0.8rem 1.3rem;
+
+    &_current {
+      color: $primary;
+      background-color: $white;
+    }
+  }
+}

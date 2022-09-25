@@ -1,0 +1,9 @@
+@import "../../styles/variables.scss";
+
+.content {
+    width: 100%;
+    max-width: 110rem;
+
+    display: flex;
+    flex-direction: column;
+}

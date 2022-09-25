@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.footer {
+    width: 100%;
+    max-width: 110rem;
+
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+
+    padding-top: 6.7rem;
+    margin-bottom: 6rem;
+}

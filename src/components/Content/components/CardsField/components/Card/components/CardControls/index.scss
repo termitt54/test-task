@@ -1,0 +1,9 @@
+@import "../../../../../../../../styles/variables.scss";
+
+.controls {
+    width: 100%;
+    max-width: 16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

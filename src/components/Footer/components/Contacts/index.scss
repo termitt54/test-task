@@ -1,0 +1,19 @@
+@import "../../../../styles/variables.scss";
+
+.contacts {
+  width: 100%;
+  max-width: 31.4rem;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: $small;
+  color: $primary;
+  text-transform: uppercase;
+  font-family: $heuristica;
+
+  &__title {
+    font-size: $medium;
+    margin-bottom: 1rem;
+  }
+}

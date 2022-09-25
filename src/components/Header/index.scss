@@ -1,0 +1,48 @@
+@import "../../styles/variables.scss";
+
+.header {
+  width: 100%;
+  max-width: 110rem;
+
+  display: flex;
+  align-items: center;
+
+  padding: 4rem 0;
+
+  &__link {
+    width: 100%;
+    max-width: 54rem;
+
+    color: $primary;
+    font-size: $big;
+    font-family: $heuristica;
+    text-transform: uppercase;
+  }
+
+  &__search {
+    position: relative;
+    width: 100%;
+    max-width: 40rem;
+
+    margin-left: auto;
+  }
+
+  &__search-input {
+    width: 100%;
+    max-width: 40rem;
+
+    font-size: $medium;
+    font-family: $roboto;
+
+    border: none;
+    border-radius: 2rem;
+    background-color: $white;
+    box-shadow: 0 4px 7px rgba(100, 177, 252, 0.3);
+
+    padding: 1.05rem 4.6rem 1.05rem 1.6rem;
+
+    &:focus {
+        outline: none;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../../../../../styles/variables.scss";
+
+.top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &__text-subtitle {
+    font-size: $small;
+    color: rgba($dark, 0.5);
+
+    margin-bottom: 0.8rem;
+  }
+
+  &__text-title {
+    font-size: $big;
+    color: $primary;
+    font-family: $heuristica;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    position: relative;
+    width: 100%;
+    max-width: 22.1rem;
+    margin-left: auto;
+  }
+
+  &__input-search {
+    width: 100%;
+    font-size: $medium;
+
+    border: none;
+    border-radius: 2rem;
+    background-color: #f5f6f7;
+
+    padding: 1.05rem 4.8rem 1.05rem 1.6rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../../../styles/variables.scss";
+
+.search {
+  width: 100%;
+  max-width: 110rem;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: $white;
+  border-radius: 1.6rem;
+
+  padding: 2rem;
+}
+

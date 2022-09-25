@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $white;
+}
+
+.nav {
+    width: 100%;
+    max-width: 110rem;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 1rem 0;
+
+    &__link {
+        font-size: $small;
+        color: $primary;
+    }
+}
