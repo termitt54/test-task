@@ -36,7 +36,6 @@ a {
 
 .btn {
     cursor: pointer;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +45,7 @@ a {
     background-color: transparent;
 
     &_search {
-        max-width: 20.7rem;
+        min-width: 20.7rem;
 
         font-size: $medium;
         font-weight: 500;

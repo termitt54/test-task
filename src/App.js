@@ -91,13 +91,13 @@ function App() {
   const [filterRegion, setFilterRegion] = useState("");
 
   const onSearch = () => {
-    const search = cards.filter((item) => {
-      return filterRegion === "Все регионы"
-        ? item.title.toLowerCase().includes(searchCard.toLowerCase()) && cards
-        : item.title.toLowerCase().includes(searchCard.toLowerCase()) &&
-            item.geoposition.includes(filterRegion);
-    });
-    setCard(search);
+      const search = cards.filter((item) => {
+        return filterRegion === "Все регионы"
+          ? item.title.toLowerCase().includes(searchCard.toLowerCase()) && cards
+          : item.title.toLowerCase().includes(searchCard.toLowerCase()) &&
+              item.geoposition.includes(filterRegion);
+      });
+      setCard(search);
   };
 
   return (
